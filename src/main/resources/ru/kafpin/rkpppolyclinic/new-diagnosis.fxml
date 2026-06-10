@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="300.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.NewDiagnosisController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+    <children>
+        <Label text="ID Больничного листа" />
+        <TextField fx:id="tfSickLeaveId" promptText="Например: 1" />
+        <Label text="Код МКБ" />
+        <TextField fx:id="tfIcdCode" promptText="Например: J11" />
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onOkClick" prefWidth="80.0" text="Ок" />
+                <Button mnemonicParsing="false" onAction="#onCancelClick" prefWidth="80.0" text="Отмена" />
+            </children>
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

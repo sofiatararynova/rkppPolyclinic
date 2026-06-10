@@ -1,16 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.MainController">
+    <children>
+        <TabPane prefHeight="550.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+                <Tab text="Пациенты">
+                    <content>
+                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                            <items>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddPatientClick" text="Добавить пациента" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#onEditPatientClick" text="Редактировать" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="86.0" mnemonicParsing="false" onAction="#onDeletePatientClick" text="Удалить" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Label fx:id="lbPatientInfo" layoutX="14.0" layoutY="140.0" text="Статус: готов" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tvPatientsTable" prefHeight="467.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                                <TableColumn fx:id="pLastNameColumn" text="Фамилия" />
+                                                <TableColumn fx:id="pFirstNameColumn" text="Имя" />
+                                                <TableColumn fx:id="pPatronymicColumn" text="Отчество" />
+                                                <TableColumn fx:id="pAddressColumn" text="Адрес проживания" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </content>
+                </Tab>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ru.kafpin.rkpppolyclinic.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+                <Tab text="Врачи">
+                    <content>
+                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                            <items>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddDoctorClick" text="Добавить врача" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#onEditDoctorClick" text="Редактировать" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="86.0" mnemonicParsing="false" onAction="#onDeleteDoctorClick" text="Удалить" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Label fx:id="lbDoctorInfo" layoutX="14.0" layoutY="140.0" text="Статус: готов" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tvDoctorsTable" prefHeight="467.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                                <TableColumn fx:id="dLastNameColumn" text="Фамилия" />
+                                                <TableColumn fx:id="dFirstNameColumn" text="Имя" />
+                                                <TableColumn fx:id="dPatronymicColumn" text="Отчество" />
+                                                <TableColumn fx:id="dSpecialtyTextColumn" text="Специальность (текст)" />
+                                                <TableColumn fx:id="dExperienceColumn" text="Стаж (лет)" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </content>
+                </Tab>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+                <Tab text="Записи на прием (Талоны)">
+                    <content>
+                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                            <items>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddAppointmentClick" text="Выдать талон" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#onEditAppointmentClick" text="Изменить талон" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="86.0" mnemonicParsing="false" onAction="#onDeleteAppointmentClick" text="Аннулировать" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Label fx:id="lbAppointmentInfo" layoutX="14.0" layoutY="140.0" text="Статус: готов" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tvAppointmentsTable" prefHeight="467.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                                <TableColumn fx:id="aPatientIdColumn" text="ID Пациента" />
+                                                <TableColumn fx:id="aDoctorIdColumn" text="ID Врача" />
+                                                <TableColumn fx:id="aDateTimeColumn" text="Дата и время приема" />
+                                                <TableColumn fx:id="aOfficeColumn" text="Кабинет" />
+                                                <TableColumn fx:id="aStatusColumn" text="Статус талона" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </content>
+                </Tab>
+
+                <Tab text="Диагнозы (Больничные)">
+                    <content>
+                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                            <items>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Button layoutX="10.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAddDiagnosisClick" text="Добавить диагноз" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="50.0" mnemonicParsing="false" onAction="#onEditDiagnosisClick" text="Редактировать" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Button layoutX="10.0" layoutY="86.0" mnemonicParsing="false" onAction="#onDeleteDiagnosisClick" text="Удалить" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                        <Label fx:id="lbDiagnosisInfo" layoutX="14.0" layoutY="140.0" text="Статус: готов" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tvDiagnosesTable" prefHeight="467.0" prefWidth="596.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                                <TableColumn fx:id="dSickLeaveColumn" text="ID Больничного листа" />
+                                                <TableColumn fx:id="dIcdColumn" text="Код МКБ" />
+                                            </columns>
+                                            <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                            </columnResizePolicy>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

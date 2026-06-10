@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="302.0" spacing="8.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.NewDoctorController">
+    <children>
+        <Label text="Фамилия" />
+        <TextField fx:id="tfLastName" />
+        <Label text="Имя" />
+        <TextField fx:id="tfFirstName" />
+        <Label text="Отчество" />
+        <TextField fx:id="tfMiddleName" />
+        <Label text="Специализация (Справочник)" />
+        <ComboBox fx:id="cbSpecialty" prefWidth="280.0" />
+        <Label text="Альтернативный текст специальности" />
+        <TextField fx:id="tfSpecialtyText" />
+        <Label text="Стаж работы (лет)" />
+        <TextField fx:id="tfExperience" />
+        <Label text="Дата рождения" />
+        <DatePicker fx:id="dpDateOfBirth" prefWidth="280.0" />
+        <Label text="Адрес проживания" />
+        <TextField fx:id="tfResidentialAddress" />
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onOkClick" prefWidth="80.0" text="Ок" />
+                <Button mnemonicParsing="false" onAction="#onCancelClick" prefWidth="80.0" text="Отмена" />
+            </children>
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+    </padding>
+</VBox>
