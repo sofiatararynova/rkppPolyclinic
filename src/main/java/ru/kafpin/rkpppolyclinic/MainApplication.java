@@ -20,7 +20,7 @@ public class MainApplication extends Application {
         MainApplication.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Поликлиника - Управление Пациентами");
+        stage.setTitle("Поликлиника");
         stage.setScene(scene);
         stage.show();
     }

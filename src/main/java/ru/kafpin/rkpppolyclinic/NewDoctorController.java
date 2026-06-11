@@ -20,7 +20,7 @@ public class NewDoctorController {
     @FXML private TextField tfFirstName;
     @FXML private TextField tfMiddleName;
     @FXML private ComboBox<Specialty> cbSpecialty;
-    @FXML private TextField tfSpecialtyText;
+//    @FXML private TextField tfSpecialtyText;
     @FXML private TextField tfExperience;
     @FXML private DatePicker dpDateOfBirth;
     @FXML private TextField tfResidentialAddress;
@@ -47,18 +47,41 @@ public class NewDoctorController {
         doctor.setMiddleName(tfMiddleName.getText());
 
         Specialty selected = cbSpecialty.getSelectionModel().getSelectedItem();
-        if (selected != null) {
-            doctor.setSpecialtyId(selected.getId());
-        }
-
-        doctor.setSpecialtyText(tfSpecialtyText.getText());
-
-        try {
-            doctor.setExperienceYears(tfExperience.getText().isEmpty() ? 0 : Integer.parseInt(tfExperience.getText()));
-        } catch (NumberFormatException e) {
-            showError("Стаж должен быть числом!");
+        if (selected == null) {
+            showError("Выберите специальность из списка");
             return;
         }
+
+        doctor.setSpecialtyId(selected.getId());
+        doctor.setSpecialtyText(selected.getName());
+
+//        doctor.setSpecialtyText(tfSpecialtyText.getText());
+
+//        try {
+//            doctor.setExperienceYears(tfExperience.getText().isEmpty() ? 0 : Integer.parseInt(tfExperience.getText()));
+//        } catch (NumberFormatException e) {
+//            showError("Стаж должен быть числом!");
+//            return;
+//        }
+
+        String experienceText = tfExperience.getText().trim();
+        if (experienceText.isEmpty()) {
+            showError("Введите стаж");
+            return;
+        }
+        int experience;
+        try {
+            experience = Integer.parseInt(experienceText);
+        } catch (NumberFormatException e) {
+            showError("Стаж должен быть целым числом");
+            return;
+        }
+        if (experience < 0 || experience > 70) {
+            showError("Стаж должен быть от 0 до 70 лет");
+            return;
+        }
+        doctor.setExperienceYears(experience);
+
 
         doctor.setDateOfBirth(dpDateOfBirth.getValue());
         doctor.setResidentialAddress(tfResidentialAddress.getText());
@@ -75,7 +98,7 @@ public class NewDoctorController {
         tfLastName.setText(doctor.getLastName());
         tfFirstName.setText(doctor.getFirstName());
         tfMiddleName.setText(doctor.getMiddleName());
-        tfSpecialtyText.setText(doctor.getSpecialtyText());
+//        tfSpecialtyText.setText(doctor.getSpecialtyText());
         tfExperience.setText(String.valueOf(doctor.getExperienceYears()));
         dpDateOfBirth.setValue(doctor.getDateOfBirth());
         tfResidentialAddress.setText(doctor.getResidentialAddress());

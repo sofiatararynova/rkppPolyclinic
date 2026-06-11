@@ -17,10 +17,11 @@
         <TextField fx:id="tfFirstName" />
         <Label text="Отчество" />
         <TextField fx:id="tfMiddleName" />
-        <Label text="Специализация (Справочник)" />
+        <Label text="Специализация" />
         <ComboBox fx:id="cbSpecialty" prefWidth="280.0" />
-        <Label text="Альтернативный текст специальности" />
-        <TextField fx:id="tfSpecialtyText" />
+<!--        <Label text="Альтернативный текст специальности" />-->
+<!--        <TextField fx:id="tfSpecialtyText" />-->
+
         <Label text="Стаж работы (лет)" />
         <TextField fx:id="tfExperience" />
         <Label text="Дата рождения" />

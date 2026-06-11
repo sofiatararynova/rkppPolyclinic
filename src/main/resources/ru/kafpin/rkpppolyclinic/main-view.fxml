@@ -70,7 +70,16 @@
                         </SplitPane>
                     </content>
                 </Tab>
-
+                <Tab text="Расписание">
+                    <content>
+                        <fx:include source="schedule-view.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Визиты">
+                    <content>
+                        <fx:include source="visit-view.fxml" />
+                    </content>
+                </Tab>
                 <Tab text="Записи на прием (Талоны)">
                     <content>
                         <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
