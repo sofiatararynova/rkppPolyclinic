@@ -6,28 +6,27 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import ru.kafpin.rkpppolyclinic.dao.*;
-import ru.kafpin.rkpppolyclinic.models.*;
+import ru.kafpin.rkpppolyclinic.dao.DoctorDao;
+import ru.kafpin.rkpppolyclinic.dao.PatientDao;
+import ru.kafpin.rkpppolyclinic.models.Doctor;
+import ru.kafpin.rkpppolyclinic.models.Patient;
+import ru.kafpin.rkpppolyclinic.DoctorPatientsDialogController;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 public class MainController {
-    private Dao<Patient, Long> patientDao;
-    private Dao<Doctor, Long> doctorDao;
-    private Dao<MedicalAppointment, Long> appointmentDao;
-    private Dao<Diagnosis, Long> diagnosisDao;
+    private PatientDao patientDao;
+    private DoctorDao doctorDao;
 
     private ObservableList<Patient> patients = FXCollections.observableArrayList();
     private ObservableList<Doctor> doctors = FXCollections.observableArrayList();
-    private ObservableList<MedicalAppointment> appointments = FXCollections.observableArrayList();
-    private ObservableList<Diagnosis> diagnoses = FXCollections.observableArrayList();
 
     @FXML private TableView<Patient> tvPatientsTable;
     @FXML private TableColumn<Patient, String> pLastNameColumn;
@@ -44,24 +43,9 @@ public class MainController {
     @FXML private TableColumn<Doctor, Integer> dExperienceColumn;
     @FXML private Label lbDoctorInfo;
 
-    @FXML private TableView<MedicalAppointment> tvAppointmentsTable;
-    @FXML private TableColumn<MedicalAppointment, Long> aPatientIdColumn;
-    @FXML private TableColumn<MedicalAppointment, Long> aDoctorIdColumn;
-    @FXML private TableColumn<MedicalAppointment, LocalDateTime> aDateTimeColumn;
-    @FXML private TableColumn<MedicalAppointment, String> aOfficeColumn;
-    @FXML private TableColumn<MedicalAppointment, String> aStatusColumn;
-    @FXML private Label lbAppointmentInfo;
-
-    @FXML private TableView<Diagnosis> tvDiagnosesTable;
-    @FXML private TableColumn<Diagnosis, Long> dSickLeaveColumn;
-    @FXML private TableColumn<Diagnosis, String> dIcdColumn;
-    @FXML private Label lbDiagnosisInfo;
-
     public MainController() {
         this.patientDao = new PatientDao();
         this.doctorDao = new DoctorDao();
-        this.appointmentDao = new MedicalAppointmentDao();
-        this.diagnosisDao = new DiagnosisDao();
     }
 
     @FXML
@@ -80,19 +64,6 @@ public class MainController {
         dExperienceColumn.setCellValueFactory(new PropertyValueFactory<>("experienceYears"));
         doctors.addAll(doctorDao.findAll());
         tvDoctorsTable.setItems(doctors);
-
-        aPatientIdColumn.setCellValueFactory(new PropertyValueFactory<>("patientId"));
-        aDoctorIdColumn.setCellValueFactory(new PropertyValueFactory<>("doctorId"));
-        aDateTimeColumn.setCellValueFactory(new PropertyValueFactory<>("appointmentDateTime"));
-        aOfficeColumn.setCellValueFactory(new PropertyValueFactory<>("officeNumber"));
-        aStatusColumn.setCellValueFactory(new PropertyValueFactory<>("statusText"));
-        appointments.addAll(appointmentDao.findAll());
-        tvAppointmentsTable.setItems(appointments);
-
-        dSickLeaveColumn.setCellValueFactory(new PropertyValueFactory<>("sickLeaveId"));
-        dIcdColumn.setCellValueFactory(new PropertyValueFactory<>("icdCode"));
-        diagnoses.addAll(diagnosisDao.findAll());
-        tvDiagnosesTable.setItems(diagnoses);
     }
 
     @FXML void onAddPatientClick(ActionEvent event) throws IOException {
@@ -121,55 +92,11 @@ public class MainController {
         if (selected == null) return; doctorDao.delete(selected.getId()); doctors.remove(selected);
     }
 
-    @FXML void onAddAppointmentClick(ActionEvent event) throws IOException {
-        MedicalAppointment app = new MedicalAppointment(); showAppointmentDialog(app);
-        if (app.getPatientId() > 0) { appointmentDao.save(app); appointments.add(app); }
-    }
-    @FXML void onEditAppointmentClick(ActionEvent event) throws IOException {
-        MedicalAppointment selected = tvAppointmentsTable.getSelectionModel().getSelectedItem();
-        if (selected == null) return; showAppointmentDialog(selected); appointmentDao.update(selected); tvAppointmentsTable.refresh();
-    }
-    @FXML void onDeleteAppointmentClick(ActionEvent event) {
-        MedicalAppointment selected = tvAppointmentsTable.getSelectionModel().getSelectedItem();
-        if (selected == null) return; appointmentDao.delete(selected.getId()); appointments.remove(selected);
-    }
-
-    // МЕТОДЫ ДИАГНОЗОВ
-    @FXML void onAddDiagnosisClick(ActionEvent event) throws IOException {
-        Diagnosis diag = new Diagnosis(); showDiagnosisDialog(diag);
-        if (diag.getIcdCode() != null && !diag.getIcdCode().isEmpty()) {
-            diagnosisDao.save(diag);
-            diagnoses.add(diag);
-            lbDiagnosisInfo.setText("Добавлен диагноз");
-        }
-    }
-    @FXML void onEditDiagnosisClick(ActionEvent event) throws IOException {
-        Diagnosis selected = tvDiagnosesTable.getSelectionModel().getSelectedItem();
-        if (selected == null) { lbDiagnosisInfo.setText("Выберите диагноз!"); return; }
-        showDiagnosisDialog(selected);
-        diagnosisDao.update(selected);
-        tvDiagnosesTable.refresh();
-        lbDiagnosisInfo.setText("Диагноз обновлен");
-    }
-    @FXML void onDeleteDiagnosisClick(ActionEvent event) {
-        Diagnosis selected = tvDiagnosesTable.getSelectionModel().getSelectedItem();
-        if (selected == null) { lbDiagnosisInfo.setText("Выберите диагноз!"); return; }
-        diagnosisDao.delete(selected.getSickLeaveId());
-        diagnoses.remove(selected);
-        lbDiagnosisInfo.setText("Диагноз удален");
-    }
-
     private void showPatientDialog(Patient p) throws IOException {
         openWindow("new-patient.fxml", "Пациент", p);
     }
     private void showDoctorDialog(Doctor d) throws IOException {
         openWindow("new-doctor.fxml", "Врач", d);
-    }
-    private void showAppointmentDialog(MedicalAppointment app) throws IOException {
-        openWindow("new-appointment.fxml", "Талон", app);
-    }
-    private void showDiagnosisDialog(Diagnosis diag) throws IOException {
-        openWindow("new-diagnosis.fxml", "Диагноз", diag);
     }
 
     private FXMLLoader openWindow(String fxml, String title, Object model) throws IOException {
@@ -191,18 +118,28 @@ public class MainController {
             c.setStage(stage);
             c.setDoctor((Doctor) model);
         }
-        if (fxml.contains("appointment")) {
-            NewAppointmentController c = loader.getController();
-            c.setStage(stage);
-            c.setAppointment((MedicalAppointment) model);
-        }
-        if (fxml.contains("diagnosis")) {
-            NewDiagnosisController c = loader.getController();
-            c.setStage(stage);
-            c.setDiagnosis((Diagnosis) model);
-        }
 
         stage.showAndWait();
         return loader;
+    }
+
+    @FXML
+    void onDoctorPatientsClick(ActionEvent event) throws IOException {
+        Doctor selected = tvDoctorsTable.getSelectionModel().getSelectedItem();
+        if (selected == null) {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Выберите врача");
+            alert.showAndWait();
+            return;
+        }
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("doctor-patients.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(loader.load()));
+        stage.setTitle("Пациенты врача за период");
+        stage.initModality(Modality.WINDOW_MODAL);
+        stage.initOwner(MainApplication.getStage());
+
+        DoctorPatientsDialogController controller = loader.getController();
+        controller.setDoctor(selected);
+        stage.showAndWait();
     }
 }

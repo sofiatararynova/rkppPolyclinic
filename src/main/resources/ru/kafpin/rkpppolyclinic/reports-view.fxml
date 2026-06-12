@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.ReportsController">
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+    <children>
+        <Label text="Период для статистики визитов" style="-fx-font-weight: bold;"/>
+        <HBox spacing="10">
+            <DatePicker fx:id="dpStart" promptText="Дата начала"/>
+            <DatePicker fx:id="dpEnd" promptText="Дата окончания"/>
+            <Button text="Показать" onAction="#onShowVisitsCount"/>
+        </HBox>
+        <TableView fx:id="tvVisitsCount" prefHeight="400" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colDoctorName" text="Врач" prefWidth="200"/>
+                <TableColumn fx:id="colCompleted" text="Завершён" prefWidth="100"/>
+                <TableColumn fx:id="colPlanned" text="Запланирован" prefWidth="100"/>
+                <TableColumn fx:id="colCancelled" text="Отменён" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>

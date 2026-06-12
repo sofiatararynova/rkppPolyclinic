@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.stream.Collectors;
+import ru.kafpin.rkpppolyclinic.ScheduleController;
 
 public class VisitController {
 
@@ -85,6 +86,7 @@ public class VisitController {
         if (showDialog(newVisit)) {
             visitDao.save(newVisit);
             loadData();
+            ScheduleController.refreshTable();
         }
     }
 
@@ -98,6 +100,7 @@ public class VisitController {
         if (showDialog(selected)) {
             visitDao.update(selected);
             loadData();
+            ScheduleController.refreshTable();
         }
     }
 
@@ -113,6 +116,7 @@ public class VisitController {
             if (response == ButtonType.YES) {
                 visitDao.delete(selected.getId());
                 loadData();
+                ScheduleController.refreshTable();
             }
         });
     }

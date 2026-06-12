@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.SickLeaveDialogController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+    <children>
+        <Label text="ID Визита"/>
+        <ComboBox fx:id="cbVisit" promptText="Выберите визит"/>
+
+        <Label text="Дата выдачи"/>
+        <DatePicker fx:id="dpIssueDate"/>
+
+        <Label text="Содержание"/>
+        <TextField fx:id="tfContent"/>
+
+        <Label text="Статус"/>
+        <ComboBox fx:id="cbStatus" promptText="Выберите статус"/>
+
+        <HBox spacing="20" alignment="CENTER">
+            <children>
+                <Button text="ОК" onAction="#onOk" prefWidth="80"/>
+                <Button text="Отмена" onAction="#onCancel" prefWidth="80"/>
+            </children>
+            <VBox.margin>
+                <Insets top="15"/>
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

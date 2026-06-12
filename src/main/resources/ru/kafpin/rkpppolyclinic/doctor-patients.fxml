@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.DoctorPatientsDialogController">
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+    <children>
+        <Label fx:id="lblDoctor" text="Врач:"/>
+        <Label text="Начало периода"/>
+        <DatePicker fx:id="dpStart"/>
+        <Label text="Конец периода"/>
+        <DatePicker fx:id="dpEnd"/>
+        <Button text="Показать" onAction="#onShow"/>
+        <TableView fx:id="tvPatients" prefHeight="300" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colLastName" text="Фамилия"/>
+                <TableColumn fx:id="colFirstName" text="Имя"/>
+                <TableColumn fx:id="colMiddleName" text="Отчество"/>
+                <TableColumn fx:id="colVisitDate" text="Дата визита"/>
+            </columns>
+        </TableView>
+        <Button text="Закрыть" onAction="#onClose"/>
+    </children>
+</VBox>

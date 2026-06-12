@@ -21,6 +21,7 @@ import java.util.Map;
 
 public class ScheduleController {
 
+    private static ScheduleController instance;
     private ScheduleDao scheduleDao = new ScheduleDao();
     private DoctorDao doctorDao = new DoctorDao();
 
@@ -29,10 +30,20 @@ public class ScheduleController {
     private Map<Long, Doctor> doctorsMap = new HashMap<>();
 
     @FXML private TableView<Schedule> tvSchedule;
-    @FXML private TableColumn<Schedule, Long> colDoctorId;
+//    @FXML private TableColumn<Schedule, Long> colDoctorId;
     @FXML private TableColumn<Schedule, String> colDoctorName;
     @FXML private TableColumn<Schedule, String> colDateTime;
     @FXML private TableColumn<Schedule, String> colStatus;
+
+    public ScheduleController() {
+        instance = this;  // сохраняем экземпляр при создании
+    }
+
+    public static void refreshTable() {
+        if (instance != null) {
+            instance.loadData();  // перезагружаем данные
+        }
+    }
 
     @FXML
     public void initialize() {
@@ -40,7 +51,7 @@ public class ScheduleController {
         loadDoctorsMap();
 
 
-        colDoctorId.setCellValueFactory(new PropertyValueFactory<>("doctorId"));
+        //colDoctorId.setCellValueFactory(new PropertyValueFactory<>("doctorId"));
 
         colDoctorName.setCellValueFactory(cellData -> {
             long docId = cellData.getValue().getDoctorId();
