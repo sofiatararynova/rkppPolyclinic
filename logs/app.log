@@ -1,0 +1,16 @@
+2026-06-13 21:25:29 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-13 21:25:42 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-13 21:25:42 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-13 21:25:43 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-13 21:25:43 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-13 21:25:43 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-13 21:26:36 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-13 21:26:36 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-13 21:36:18 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-13 21:36:29 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-13 21:36:29 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-13 21:36:29 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-13 21:36:29 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-13 21:36:30 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-13 21:48:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-13 21:48:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
