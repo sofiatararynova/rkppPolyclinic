@@ -9,6 +9,7 @@ public class SickLeave {
     private final ObjectProperty<LocalDate> issueDate = new SimpleObjectProperty<>();
     private final StringProperty content = new SimpleStringProperty();
     private final StringProperty status = new SimpleStringProperty();
+    private String patientFullName;
 
     public SickLeave() {}
 
@@ -39,4 +40,7 @@ public class SickLeave {
     public String getStatus() { return status.get(); }
     public StringProperty statusProperty() { return status; }
     public void setStatus(String status) { this.status.set(status); }
+
+    public String getPatientFullName() { return patientFullName; }
+    public void setPatientFullName(String patientFullName) { this.patientFullName = patientFullName; }
 }

@@ -3,26 +3,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.25" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.DiagnosisController">
-    <items>
-        <AnchorPane>
-            <children>
-                <Button layoutX="10.0" layoutY="14.0" text="Добавить" onAction="#onAdd" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-                <Button layoutX="10.0" layoutY="50.0" text="Удалить" onAction="#onDelete" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
-            </children>
-        </AnchorPane>
-        <AnchorPane>
-            <children>
-                <TableView fx:id="tvDiagnosis" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <columns>
-                        <TableColumn fx:id="colSickLeaveId" text="ID Больничного листа" prefWidth="150"/>
-                        <TableColumn fx:id="colIcdCode" text="Код МКБ" prefWidth="150"/>
-                    </columns>
-                    <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                    </columnResizePolicy>
-                </TableView>
-            </children>
-        </AnchorPane>
-    </items>
-</SplitPane>
+<VBox spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.DiagnosisStatisticsController">
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+    <children>
+        <Label text="Количество случаев заболевания по диагнозам" style="-fx-font-weight: bold;"/>
+        <Button text="Обновить" onAction="#onRefresh" maxWidth="Infinity"/>
+        <TableView fx:id="tvStatistics" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colIcdCode" text="Код МКБ" minWidth="150" maxWidth="Infinity"/>
+                <TableColumn fx:id="colCount" text="Количество случаев" minWidth="150" maxWidth="Infinity"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>

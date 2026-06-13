@@ -9,33 +9,48 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import ru.kafpin.rkpppolyclinic.dao.SickLeaveDao;
-import ru.kafpin.rkpppolyclinic.models.SickLeave;
+import ru.kafpin.rkpppolyclinic.dao.*;
+import ru.kafpin.rkpppolyclinic.models.*;
 
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class SickLeaveController {
 
     private SickLeaveDao sickLeaveDao = new SickLeaveDao();
+    private DiagnosisDao diagnosisDao = new DiagnosisDao();  // для получения диагноза
     private ObservableList<SickLeave> sickLeaveList = FXCollections.observableArrayList();
 
     @FXML private TableView<SickLeave> tvSickLeave;
-    @FXML private TableColumn<SickLeave, Long> colVisitId;
+    @FXML private TableColumn<SickLeave, String> colPatient;
     @FXML private TableColumn<SickLeave, String> colIssueDate;
     @FXML private TableColumn<SickLeave, String> colContent;
+    @FXML private TableColumn<SickLeave, String> colDiagnosis;
     @FXML private TableColumn<SickLeave, String> colStatus;
 
     @FXML
     public void initialize() {
-        colVisitId.setCellValueFactory(new PropertyValueFactory<>("visitId"));
+        colPatient.setCellValueFactory(new PropertyValueFactory<>("patientFullName"));
         colIssueDate.setCellValueFactory(cellData -> {
             var date = cellData.getValue().getIssueDate();
-            String formatted = (date != null) ? date.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")) : "";
-            return new javafx.beans.property.SimpleStringProperty(formatted);
+            return new javafx.beans.property.SimpleStringProperty(
+                    date != null ? date.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")) : "");
         });
         colContent.setCellValueFactory(new PropertyValueFactory<>("content"));
         colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+
+        // Настройка колонки диагноза
+        colDiagnosis.setCellValueFactory(cellData -> {
+            SickLeave sl = cellData.getValue();
+            if (sl != null && sl.getId() != 0) {
+                List<Diagnosis> diag = diagnosisDao.findBySickLeaveId(sl.getId());
+                if (!diag.isEmpty()) {
+                    return new javafx.beans.property.SimpleStringProperty(diag.get(0).getIcdCode());
+                }
+            }
+            return new javafx.beans.property.SimpleStringProperty("");
+        });
 
         loadData();
         tvSickLeave.setItems(sickLeaveList);
@@ -46,17 +61,15 @@ public class SickLeaveController {
         sickLeaveList.addAll(sickLeaveDao.findAll());
     }
 
-    @FXML
-    private void onAdd() throws IOException {
-        SickLeave newSickLeave = new SickLeave();
-        if (showDialog(newSickLeave)) {
-            sickLeaveDao.save(newSickLeave);
+    @FXML private void onAdd() throws IOException {
+        SickLeave newSL = new SickLeave();
+        if (showDialog(newSL)) {
+            sickLeaveDao.save(newSL);
             loadData();
         }
     }
 
-    @FXML
-    private void onEdit() throws IOException {
+    @FXML private void onEdit() throws IOException {
         SickLeave selected = tvSickLeave.getSelectionModel().getSelectedItem();
         if (selected == null) {
             showWarning("Выберите больничный лист");
@@ -68,13 +81,9 @@ public class SickLeaveController {
         }
     }
 
-    @FXML
-    private void onDelete() {
+    @FXML private void onDelete() {
         SickLeave selected = tvSickLeave.getSelectionModel().getSelectedItem();
-        if (selected == null) {
-            showWarning("Выберите больничный лист");
-            return;
-        }
+        if (selected == null) return;
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Удалить больничный лист?", ButtonType.YES, ButtonType.NO);
         alert.showAndWait().ifPresent(response -> {
             if (response == ButtonType.YES) {

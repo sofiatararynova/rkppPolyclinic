@@ -19,7 +19,7 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         MainApplication.stage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 800, 400);
         stage.setTitle("Поликлиника");
         stage.setScene(scene);
         stage.show();

@@ -14,9 +14,9 @@ import ru.kafpin.rkpppolyclinic.models.*;
 
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import ru.kafpin.rkpppolyclinic.ScheduleController;
 
 public class VisitController {
 
@@ -24,6 +24,8 @@ public class VisitController {
     private PatientDao patientDao = new PatientDao();
     private ScheduleDao scheduleDao = new ScheduleDao();
     private DoctorDao doctorDao = new DoctorDao();
+    private SickLeaveDao sickLeaveDao = new SickLeaveDao();
+    private DiagnosisDao diagnosisDao = new DiagnosisDao();
 
     private ObservableList<Visit> visitList = FXCollections.observableArrayList();
     private Map<Long, Patient> patientMap;
@@ -35,6 +37,8 @@ public class VisitController {
     @FXML private TableColumn<Visit, String> colDoctor;
     @FXML private TableColumn<Visit, String> colDateTime;
     @FXML private TableColumn<Visit, String> colStatus;
+    @FXML private TableColumn<Visit, String> colSickLeave;
+    @FXML private TableColumn<Visit, String> colDiagnosis;
 
     @FXML
     public void initialize() {
@@ -63,6 +67,20 @@ public class VisitController {
         });
 
         colStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+        colSickLeave.setCellValueFactory(cellData -> {
+            SickLeave sl = sickLeaveDao.findByVisitId(cellData.getValue().getId());
+            return new javafx.beans.property.SimpleStringProperty(sl != null ? "Да" : "Нет");
+        });
+        colDiagnosis.setCellValueFactory(cellData -> {
+            SickLeave sl = sickLeaveDao.findByVisitId(cellData.getValue().getId());
+            if (sl != null) {
+                List<Diagnosis> diag = diagnosisDao.findBySickLeaveId(sl.getId());
+                if (!diag.isEmpty()) {
+                    return new javafx.beans.property.SimpleStringProperty(diag.get(0).getIcdCode());
+                }
+            }
+            return new javafx.beans.property.SimpleStringProperty("");
+        });
 
         loadData();
         tvVisit.setItems(visitList);

@@ -76,4 +76,37 @@ public class DiagnosisDao {
             e.printStackTrace();
         }
     }
+
+    public List<Diagnosis> findBySickLeaveId(Long sickLeaveId) {
+        List<Diagnosis> list = new ArrayList<>();
+        String sql = "SELECT sick_leave_id, icd_code FROM myschema.diagnosis WHERE sick_leave_id = ?";
+        try (PreparedStatement stmt = DBHelper.getConnection().prepareStatement(sql)) {
+            stmt.setLong(1, sickLeaveId);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                list.add(new Diagnosis(rs.getLong("sick_leave_id"), rs.getString("icd_code")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
+    public List<Object[]> getDiseaseStatistics() {
+        List<Object[]> result = new ArrayList<>();
+        String sql = "SELECT icd_code, COUNT(*) AS count FROM myschema.diagnosis GROUP BY icd_code ORDER BY count DESC";
+        try (Statement stmt = DBHelper.getConnection().createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                result.add(new Object[]{
+                        rs.getString("icd_code"),
+                        rs.getInt("count")
+                });
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

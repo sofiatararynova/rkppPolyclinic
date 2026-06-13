@@ -12,13 +12,16 @@
             <DatePicker fx:id="dpEnd" promptText="Дата окончания"/>
             <Button text="Показать" onAction="#onShowVisitsCount"/>
         </HBox>
-        <TableView fx:id="tvVisitsCount" prefHeight="400" VBox.vgrow="ALWAYS">
+        <TableView fx:id="tvVisitsCount" VBox.vgrow="ALWAYS">
             <columns>
-                <TableColumn fx:id="colDoctorName" text="Врач" prefWidth="200"/>
-                <TableColumn fx:id="colCompleted" text="Завершён" prefWidth="100"/>
-                <TableColumn fx:id="colPlanned" text="Запланирован" prefWidth="100"/>
-                <TableColumn fx:id="colCancelled" text="Отменён" prefWidth="100"/>
+                <TableColumn fx:id="colDoctorName" text="Врач" minWidth="150" maxWidth="Infinity" />
+                <TableColumn fx:id="colCompleted" text="Завершён" minWidth="80" maxWidth="Infinity" />
+                <TableColumn fx:id="colPlanned" text="Запланирован" minWidth="100" maxWidth="Infinity" />
+                <TableColumn fx:id="colCancelled" text="Отменён" minWidth="80" maxWidth="Infinity" />
             </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
         </TableView>
     </children>
 </VBox>

@@ -8,7 +8,7 @@
             <tabs>
                 <Tab text="Пациенты">
                     <content>
-                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                        <SplitPane dividerPositions="0.20" prefHeight="400.0" prefWidth="800.0">
                             <items>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
@@ -39,7 +39,7 @@
 
                 <Tab text="Врачи">
                     <content>
-                        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0">
+                        <SplitPane dividerPositions="0.20" prefHeight="400.0" prefWidth="800.0">
                             <items>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>

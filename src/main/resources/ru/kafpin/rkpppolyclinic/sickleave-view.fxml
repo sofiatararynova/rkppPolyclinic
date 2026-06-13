@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.25" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.SickLeaveController">
+<SplitPane dividerPositions="0.20" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.SickLeaveController">
     <items>
         <AnchorPane>
             <children>
@@ -16,10 +16,11 @@
             <children>
                 <TableView fx:id="tvSickLeave" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                        <TableColumn fx:id="colVisitId" text="ID Визита" />
-                        <TableColumn fx:id="colIssueDate" text="Дата выдачи" />
-                        <TableColumn fx:id="colContent" text="Содержание" />
-                        <TableColumn fx:id="colStatus" text="Статус" />
+                        <TableColumn fx:id="colPatient" text="Пациент" minWidth="150" maxWidth="Infinity"/>
+                        <TableColumn fx:id="colIssueDate" text="Дата выдачи" minWidth="100" maxWidth="Infinity"/>
+                        <TableColumn fx:id="colContent" text="Содержание" minWidth="200" maxWidth="Infinity"/>
+                        <TableColumn fx:id="colDiagnosis" text="Диагноз (МКБ)" minWidth="100" maxWidth="Infinity"/>
+                        <TableColumn fx:id="colStatus" text="Статус" minWidth="100" maxWidth="Infinity"/>
                     </columns>
                     <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

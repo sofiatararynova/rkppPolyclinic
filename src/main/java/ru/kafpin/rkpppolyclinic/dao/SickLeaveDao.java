@@ -9,7 +9,6 @@ import java.util.List;
 
 public class SickLeaveDao implements Dao<SickLeave, Long> {
 
-    private static final String FIND_ALL = "SELECT id, visit_id, issue_date, content, status FROM myschema.sick_leave";
     private static final String FIND_BY_ID = "SELECT id, visit_id, issue_date, content, status FROM myschema.sick_leave WHERE id = ?";
     private static final String SAVE = "INSERT INTO myschema.sick_leave (visit_id, issue_date, content, status) VALUES (?, ?, ?, ?)";
     private static final String UPDATE = "UPDATE myschema.sick_leave SET visit_id = ?, issue_date = ?, content = ?, status = ? WHERE id = ?";
@@ -33,10 +32,24 @@ public class SickLeaveDao implements Dao<SickLeave, Long> {
     @Override
     public List<SickLeave> findAll() {
         List<SickLeave> list = new ArrayList<>();
+        String sql =
+                "SELECT sl.id, sl.visit_id, sl.issue_date, sl.content, sl.status, " +
+                        "p.last_name || ' ' || p.first_name AS patient_full_name " +
+                        "FROM myschema.sick_leave sl " +
+                        "LEFT JOIN myschema.visit v ON sl.visit_id = v.id " +
+                        "LEFT JOIN myschema.patient p ON v.patient_id = p.id";
         try (Statement stmt = DBHelper.getConnection().createStatement();
-             ResultSet rs = stmt.executeQuery(FIND_ALL)) {
+             ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
-                list.add(mapRow(rs));
+                SickLeave sl = new SickLeave(
+                        rs.getLong("id"),
+                        rs.getLong("visit_id"),
+                        rs.getDate("issue_date") != null ? rs.getDate("issue_date").toLocalDate() : null,
+                        rs.getString("content"),
+                        rs.getString("status")
+                );
+                sl.setPatientFullName(rs.getString("patient_full_name"));
+                list.add(sl);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -95,5 +108,19 @@ public class SickLeaveDao implements Dao<SickLeave, Long> {
                 rs.getString("content"),
                 rs.getString("status")
         );
+    }
+
+    public SickLeave findByVisitId(Long visitId) {
+        String sql = "SELECT id, visit_id, issue_date, content, status FROM myschema.sick_leave WHERE visit_id = ?";
+        try (PreparedStatement stmt = DBHelper.getConnection().prepareStatement(sql)) {
+            stmt.setLong(1, visitId);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                return mapRow(rs);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

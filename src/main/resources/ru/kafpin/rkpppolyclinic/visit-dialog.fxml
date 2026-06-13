@@ -4,9 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox spacing="10" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kafpin.rkpppolyclinic.VisitDialogController">
-    <padding>
-        <Insets top="15" right="15" bottom="15" left="15"/>
-    </padding>
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
     <children>
         <Label text="Пациент"/>
         <ComboBox fx:id="cbPatient" promptText="Выберите пациента"/>
@@ -14,17 +12,28 @@
         <Label text="Расписание (врач, дата, время)"/>
         <ComboBox fx:id="cbSchedule" promptText="Выберите слот"/>
 
-        <Label text="Статус"/>
+        <Label text="Статус визита"/>
         <ComboBox fx:id="cbStatus" promptText="Выберите статус"/>
+
+        <Separator/>
+
+        <Label text="Больничный лист" style="-fx-font-weight: bold;"/>
+        <Label text="Дата выдачи"/>
+        <DatePicker fx:id="dpSickLeaveDate"/>
+        <Label text="Содержание"/>
+        <TextField fx:id="tfSickLeaveContent"/>
+        <Label text="Статус больничного"/>
+        <ComboBox fx:id="cbSickLeaveStatus" promptText="Выберите статус"/>
+
+        <Label text="Диагноз (код МКБ)"/>
+        <TextField fx:id="tfIcdCode"/>
 
         <HBox spacing="20" alignment="CENTER">
             <children>
                 <Button text="ОК" onAction="#onOk" prefWidth="80"/>
                 <Button text="Отмена" onAction="#onCancel" prefWidth="80"/>
             </children>
-            <VBox.margin>
-                <Insets top="15"/>
-            </VBox.margin>
+            <VBox.margin><Insets top="15"/></VBox.margin>
         </HBox>
     </children>
 </VBox>
