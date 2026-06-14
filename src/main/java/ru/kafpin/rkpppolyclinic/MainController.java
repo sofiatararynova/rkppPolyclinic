@@ -1,15 +1,13 @@
 package ru.kafpin.rkpppolyclinic;
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -141,5 +139,14 @@ public class MainController {
         DoctorPatientsDialogController controller = loader.getController();
         controller.setDoctor(selected);
         stage.showAndWait();
+    }
+
+    @FXML
+    private void onExit() {
+        // Подтверждение выхода
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Вы уверены, что хотите выйти?");
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            Platform.exit();
+        }
     }
 }

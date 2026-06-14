@@ -14,3 +14,545 @@
 2026-06-13 21:36:30 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
 2026-06-13 21:48:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
 2026-06-13 21:48:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-13 23:33:19 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-13 23:33:37 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-13 23:33:37 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-13 23:33:37 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-13 23:33:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-13 23:33:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-13 23:33:49 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-13 23:33:49 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 14:39:36 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 14:39:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 14:39:40 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 14:39:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 14:39:44 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 14:39:46 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 14:39:46 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем в
+2026-06-14 14:39:46 [JavaFX Application Thread] ERROR r.k.rkpppolyclinic.MainApplication - Ошибка подключения: �����: ������������ "в" �� ������ �������� ����������� (�� ������)
+2026-06-14 14:40:37 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 14:40:37 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 14:40:37 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 14:40:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 14:45:12 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 14:45:12 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 16:06:33 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 16:06:44 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 16:06:44 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 16:06:44 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:06:44 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 16:06:45 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 16:07:00 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Удаление пациента id=4
+2026-06-14 16:07:00 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=4 удалён
+2026-06-14 16:07:20 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 16:07:20 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 16:07:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 16:07:35 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 16:07:35 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 16:07:35 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:07:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 16:07:40 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 16:07:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 16:08:45 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 16:09:02 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 16:09:02 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 16:09:02 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 16:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 16:09:03 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 16:14:34 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 16:14:34 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:25:15 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:25:29 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 18:25:29 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 18:25:29 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:25:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 18:25:44 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 18:25:44 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:29:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:30:04 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 18:30:04 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 18:30:04 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:30:04 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 18:30:15 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 18:30:15 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:32:07 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:32:16 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:32:16 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 18:32:17 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 18:32:17 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:32:17 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 18:32:21 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 18:32:21 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:32:50 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:32:56 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 18:32:56 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:32:56 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:32:58 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:33:08 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 18:33:08 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 18:33:08 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:09 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 18:33:30 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 18:33:30 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 18:33:47 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 18:33:54 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 18:33:54 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 18:33:54 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 18:33:54 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 18:33:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 18:35:20 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 18:35:20 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 20:50:16 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 20:50:22 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 20:50:22 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 20:50:22 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 20:50:25 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 20:50:26 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 20:50:36 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 20:50:36 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 20:50:36 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 20:50:36 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 20:50:37 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 20:50:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 20:50:40 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 20:50:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 20:57:04 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 20:57:04 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:07:12 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:07:24 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:07:24 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:07:24 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:07:24 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:07:25 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:08:21 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: Коленова Белла
+2026-06-14 21:08:21 [JavaFX Application Thread] ERROR r.k.rkpppolyclinic.dao.PatientDao - Ошибка при сохранении пациента
+org.postgresql.util.PSQLException: ОШИБКА: нет доступа к последовательности patient_id_seq
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2875)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2560)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157)
+	at ru.kafpin.rkpppolyclinic/ru.kafpin.rkpppolyclinic.dao.PatientDao.save(PatientDao.java:65)
+	at ru.kafpin.rkpppolyclinic/ru.kafpin.rkpppolyclinic.MainController.onAddPatientClick(MainController.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at javafx.base@21.0.6/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21.0.6/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21.0.6/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1853)
+	at javafx.fxml@21.0.6/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21.0.6/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21.0.6/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21.0.6/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21.0.6/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21.0.6/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21.0.6/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21.0.6/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21.0.6/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21.0.6/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21.0.6/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21.0.6/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21.0.6/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21.0.6/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21.0.6/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21.0.6/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21.0.6/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21.0.6/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:138)
+	at javafx.graphics@21.0.6/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21.0.6/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21.0.6/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21.0.6/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21.0.6/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21.0.6/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21.0.6/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-06-14 21:08:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=7
+2026-06-14 21:08:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=7 обновлён
+2026-06-14 21:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 21:09:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 21:12:33 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:12:33 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:21 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:13:21 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:13:23 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:13:34 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:13:34 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:13:35 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:13:35 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:13:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 21:13:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 21:13:48 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:48 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:13:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:13:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 21:13:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 21:14:39 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:14:39 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:19:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:19:38 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:19:38 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:19:38 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:19:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 10 пациентов
+2026-06-14 21:19:39 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:20:12 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: Кленова Белла
+2026-06-14 21:20:12 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент сохранён с id=15
+2026-06-14 21:20:26 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=15
+2026-06-14 21:20:26 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=15 обновлён
+2026-06-14 21:20:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=11
+2026-06-14 21:20:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=11 обновлён
+2026-06-14 21:20:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:20:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:20:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 21:20:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 21:24:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:24:08 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:24:26 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:24:26 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:24:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:24:39 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:24:39 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:24:40 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:24:40 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:24:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:24:58 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:24:58 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:24:58 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 21:24:58 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 21:25:01 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:25:01 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:25:35 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:25:35 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:29:16 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:29:28 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:29:28 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:29:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:28 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:29:38 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=5
+2026-06-14 21:29:38 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=5 обновлён
+2026-06-14 21:29:41 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:29:41 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:29:45 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:29:56 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:29:56 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:29:56 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:29:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:29:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:30:10 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=11
+2026-06-14 21:30:10 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=11 обновлён
+2026-06-14 21:30:13 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:30:13 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:36:10 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:36:19 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:36:19 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем ad
+2026-06-14 21:36:19 [JavaFX Application Thread] ERROR r.k.rkpppolyclinic.MainApplication - Ошибка подключения: �����: ������������ "ad" �� ������ �������� ����������� (�� ������)
+2026-06-14 21:36:27 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:36:27 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:36:27 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 11 пациентов
+2026-06-14 21:36:27 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:38:35 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: Ветрова Елена
+2026-06-14 21:38:35 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент сохранён с id=16
+2026-06-14 21:38:43 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:38:43 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:40:42 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:40:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:40:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:40:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 12 пациентов
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 12 пациентов
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:40:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 12 пациентов
+2026-06-14 21:40:53 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:41:32 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: Ветров Игнат
+2026-06-14 21:41:32 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент сохранён с id=17
+2026-06-14 21:41:45 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:41:45 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:52:30 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:52:42 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:52:42 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:52:42 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:52:42 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:53:33 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:53:33 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:54:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:54:30 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:54:33 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 21:54:33 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:54:33 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:54:47 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:54:47 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:54:47 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:54:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:54:48 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:54:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: 44 44
+2026-06-14 21:54:55 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент сохранён с id=18
+2026-06-14 21:54:58 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Удаление пациента id=18
+2026-06-14 21:54:58 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=18 удалён
+2026-06-14 21:55:06 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:55:06 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 21:55:12 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 21:55:20 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 21:55:20 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 21:55:20 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 21:55:20 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 21:55:21 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 21:55:28 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 21:55:28 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 22:10:08 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 22:12:05 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Пользователь отменил вход
+2026-06-14 22:12:05 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 22:12:05 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 22:17:18 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 22:21:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 22:21:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 22:21:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 22:21:52 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 22:21:53 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 23:18:31 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:18:31 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:18:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:18:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:18:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 23:18:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 23:18:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:18:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:18:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=3
+2026-06-14 23:18:57 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Иванов
+2026-06-14 23:19:00 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:19:00 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:19:00 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=10
+2026-06-14 23:19:00 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ханков
+2026-06-14 23:29:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:29:02 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:29:09 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:29:09 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:29:09 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=6
+2026-06-14 23:29:09 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Руфин
+2026-06-14 23:29:26 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:29:26 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 13 пациентов
+2026-06-14 23:31:29 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Сохранение пациента: Ботатов Кирилл
+2026-06-14 23:31:29 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент сохранён с id=19
+2026-06-14 23:31:48 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:31:48 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:32:43 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:32:43 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:32:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:32:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:32:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=19
+2026-06-14 23:32:55 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ботатов
+2026-06-14 23:33:18 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:33:18 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:36:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:36:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:36:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Поиск пациента по id=19
+2026-06-14 23:36:40 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Пациент найден: Ботатов
+2026-06-14 23:39:52 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 23:39:52 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 23:39:56 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 23:40:23 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 23:40:23 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 23:40:23 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:40:23 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 23:47:22 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-14 23:47:22 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
+2026-06-14 23:47:33 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение запущено
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG ru.kafpin.rkpppolyclinic.DBHelper - Загружены настройки подключения из config.properties
+2026-06-14 23:47:46 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Попытка подключения к jdbc:postgresql://localhost:5432/polyclinica пользователем admin
+2026-06-14 23:47:46 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД успешно установлено для admin
+2026-06-14 23:47:46 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Успешный вход: admin
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Запрос всех пациентов
+2026-06-14 23:47:46 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Найдено 14 пациентов
+2026-06-14 23:47:47 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.MainApplication - Главное окно открыто
+2026-06-14 23:47:56 [JavaFX Application Thread] DEBUG r.k.rkpppolyclinic.dao.PatientDao - Обновление пациента id=8
+2026-06-14 23:47:56 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.dao.PatientDao - Пациент id=8 обновлён
+2026-06-15 00:33:21 [JavaFX Application Thread] INFO  ru.kafpin.rkpppolyclinic.DBHelper - Соединение с БД закрыто
+2026-06-15 00:33:21 [JavaFX Application Thread] INFO  r.k.rkpppolyclinic.MainApplication - Приложение остановлено
